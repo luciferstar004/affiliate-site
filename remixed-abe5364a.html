@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curated Amazon affiliate product recommendations.">
+  <title> Save More </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;1,300&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="assets/css/style.css">
+<body>
+  <script src="assets/js/app.js" defer></script>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <nav>
+    <a href="#" class="nav-logo" id="siteLogo">Curated<span>Picks</span></a>
+    <ul class="nav-links" id="navLinks"></ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-shape s1"></div>
+      <div class="hero-bg-shape s2"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge"><div class="hero-badge-dot"></div><span id="heroBadge"></span></div>
+        <h1 id="heroTitle"></h1>
+        <p class="hero-sub" id="heroSubtitle"></p>
+        <div class="hero-actions" id="heroActions"></div>
+      </div>
+
+      <div class="hero-3d-scene" id="heroCards" aria-hidden="true"></div>
+    </section>
+
+    <section class="stats-strip" id="statsStrip" aria-label="Store statistics"></section>
+
+    <section class="search-section" id="products">
+      <h2 class="search-title">Find your <em>next favorite</em></h2>
+      <div class="search-bar-wrap">
+        <input id="searchInput" type="search" placeholder="Search headphones, wallet, home..." autocomplete="off">
+        <button class="search-btn" id="searchButton" type="button">Search</button>
+      </div>
+    </section>
+
+    <section class="filters" aria-label="Product categories">
+      <div class="filter-label">Shop by category</div>
+      <div class="filter-pills" id="filterPills"></div>
+    </section>
+
+    <section class="products-section">
+      <div class="section-header">
+        <h2 id="productsHeading">All picks</h2>
+        <span id="searchResultLabel"></span>
+      </div>
+      <div class="results-count" id="resultCount"></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="no-results" id="noResults">
+        <h3>No matching products</h3>
+        <p>Try another search term or choose a different category.</p>
+      </div>
+    </section>
+
+    <section class="featured-band reveal" id="featured">
+      <div class="featured-text">
+        <div class="featured-eyebrow" id="featuredEyebrow"></div>
+        <h2 id="featuredTitle"></h2>
+        <p id="featuredText"></p>
+        <a href="#products" class="btn-light" id="featuredButton"></a>
+      </div>
+      <div class="featured-cards-3d" id="featuredCards"></div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+</body>
+</html>
