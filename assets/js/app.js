@@ -41,7 +41,7 @@ const affiliateTag = "YOUR-TAG";
         columns: [
           {
             title: "Categories",
-            links: ["Tech & Gadgets", "Home & Kitchen", "Fashion", "Health & Beauty", "Books"]
+            links: ["Tech & Gadgets", "Home & Kitchen", "Fashion", "Health & Beauty", "Books", ""]
           },
           {
             title: "Pages",
