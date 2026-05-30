@@ -183,7 +183,11 @@ const affiliateTag = "YOUR-TAG";
             <div class="card-image ${escapeHtml(product.color)}">
               ${product.badge ? `<div class="card-badge ${product.badge.toLowerCase() === "deal" ? "deal" : "new"}">${escapeHtml(product.badge)}</div>` : ""}
               <div class="card-shine"></div>
-              <div class="card-image-label">${escapeHtml(product.imageLabel)}</div>
+              <img 
+              src="${escapeHtml(product.image)}"
+              alt="${escapeHtml(product.title)}"
+              class="product-image"
+               />
             </div>
             <div class="card-body">
               <div class="card-category">${escapeHtml(product.category)}</div>
