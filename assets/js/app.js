@@ -7,8 +7,8 @@
 const affiliateTag = "YOUR-TAG";
 
     const site = {
-      brandName: "Save",
-      brandAccent: "More",
+      brandName: "Save ",
+      brandAccent: " More",
       nav: [
         { label: "Shop", href: "#products" },
         { label: "Deals", href: "#featured" },
