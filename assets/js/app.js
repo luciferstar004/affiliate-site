@@ -7,8 +7,8 @@
 const affiliateTag = "YOUR-TAG";
 
     const site = {
-      brandName: "Save ",
-      brandAccent: " More",
+      brandName: " Curated ",
+      brandAccent: " Picks ",
       nav: [
         { label: "Shop", href: "#products" },
         { label: "Deals", href: "#featured" },
@@ -41,11 +41,11 @@ const affiliateTag = "YOUR-TAG";
         columns: [
           {
             title: "Categories",
-            links: ["Tech & Gadgets", "Home & Kitchen", "Fashion", "Health & Beauty", "Books", ""]
+            links: ["Tech & Gadgets", "Home & Kitchen", "Fashion", "Health & Beauty", "Books"]
           },
           {
             title: "Pages",
-            links: ["About Us", "Contact", "Disclosure", "Privacy Policy"]
+            links: ["About Us", "Contact", "Affiliate Disclosure", "Privacy Policy", ""]
           },
           {
             title: "Follow",
