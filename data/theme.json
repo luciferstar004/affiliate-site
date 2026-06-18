@@ -1,0 +1,10 @@
+{
+  "theme_name": "Modern Clean Blue",
+  "primary_color": "#2563eb",
+  "secondary_color": "#1e40af",
+  "accent_color": "#f59e0b",
+  "background_color": "#f8fafc",
+  "card_background": "#ffffff",
+  "text_color": "#0f172a",
+  "font_family": "'Inter', system-ui, sans-serif"
+}

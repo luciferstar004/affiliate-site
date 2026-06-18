@@ -73,6 +73,9 @@ def update_site_map_and_index():
     print("✅ sitemap.xml completely regenerated.")
 
 def run_autonomous_pipeline():
+    # --- PHASE 0: RUN THE DESIGN MATRIX COMPILER ---
+    import theme_engine
+    theme_engine.compile_design_tokens()
     queue_path = "data/keywords.txt"
     history_path = "data/processed-keywords.txt"
     
