@@ -1173,7 +1173,200 @@
       }
 
       .featured-cards-3d,
-      footer {
+       footer {
         grid-template-columns: 1fr;
+      }
+    }
+
+    .guide-callout {
+      margin: 3rem 4rem;
+      padding: 2.5rem;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--sage-light);
+    }
+
+    .guide-callout h2 {
+      margin: 0.35rem 0 0.75rem;
+      font-family: "Fraunces", serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+    }
+
+    .guide-callout p:not(.guide-eyebrow) {
+      max-width: 620px;
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .guide-eyebrow {
+      color: var(--sage-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .affiliate-notice {
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid var(--sage-dark);
+      background: var(--ivory);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .affiliate-notice a,
+    .article-page a,
+    .legal-page a {
+      color: var(--sage-dark);
+      font-weight: 700;
+    }
+
+    .latest-price {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .load-error {
+      padding: 2rem;
+      border-radius: 16px;
+      background: var(--peach-light);
+      color: var(--text);
+    }
+
+    .article-page,
+    .legal-page {
+      width: min(920px, calc(100% - 3rem));
+      margin: 0 auto;
+      padding: 8rem 0 5rem;
+    }
+
+    .article-page header,
+    .legal-page header {
+      margin-bottom: 2.5rem;
+    }
+
+    .article-page h1,
+    .legal-page h1 {
+      margin-bottom: 1rem;
+      font-family: "Fraunces", serif;
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      font-weight: 500;
+      line-height: 1.08;
+    }
+
+    .article-page h2,
+    .legal-page h2 {
+      margin: 2.5rem 0 1rem;
+      font-family: "Fraunces", serif;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .article-page h3 {
+      margin: 1.75rem 0 0.65rem;
+      font-size: 1.2rem;
+    }
+
+    .article-page p,
+    .article-page li,
+    .legal-page p,
+    .legal-page li {
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .article-page ul,
+    .legal-page ul {
+      padding-left: 1.25rem;
+    }
+
+    .article-meta,
+    .article-note {
+      padding: 1rem 1.25rem;
+      border-radius: 14px;
+      background: var(--ivory);
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.25rem 0 2rem;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .article-page table {
+      width: 100%;
+       border-collapse: collapse;
+      min-width: 700px;
+    }
+
+    .article-page th,
+    .article-page td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .article-page th {
+      background: var(--ivory);
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .article-page td {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .product-review {
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .product-review h3 {
+      margin-top: 0;
+    }
+
+    .article-cta {
+      display: inline-flex;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      background: var(--text);
+      color: var(--cream) !important;
+      text-decoration: none;
+    }
+
+    .simple-footer {
+      display: block;
+      text-align: center;
+    }
+
+    .simple-footer p {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+      .simple-footer a {
+      color: var(--sage-dark);
+    }
+
+    @media (max-width: 900px) {
+      .guide-callout {
+        margin: 2rem 1.5rem;
+        padding: 2rem;
       }
     }

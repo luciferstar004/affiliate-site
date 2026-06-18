@@ -1,0 +1,32 @@
+MARKET DATA:
+- Territory: India (INR / ₹)
+- Affiliate ID: luciferstar004-21
+- Destination: https://www.amazon.in/dp/
+
+FOCUS CRITERIA:
+- Page Goal: Best Wireless Earbuds Under ₹1500 in India (2026 Edition)
+- Structure: Clear buyer intent focus
+
+SELECTIONS TO EVALUATE:
+1. OnePlus Nord Buds 3R
+   - ASIN Code: B0D6NTR7C9
+   - Street Value: ₹1,399
+   - Key Value: 50 Hours Playtime, Balanced Bass Drivers, AI Call Noise Isolation.
+
+2. boAt Airdopes Space
+   - ASIN Code: B0CWV1K982
+   - Street Value: ₹1,499
+   - Key Value: 100 Hours Mega Battery capacity, 32dB Active Noise Cancellation.
+
+3. Realme T200X
+   - ASIN Code: B0D3B5M6K1
+   - Street Value: ₹1,299
+   - Key Value: 45ms Ultra Gaming Low Latency, compact ergonomic fit.
+
+4. Noise Buds N1 Pro
+   - ASIN Code: B0D1A7Z5M8
+   - Street Value: ₹1,199
+   - Key Value: Budget-friendly hybrid noise cancellation, fast charge capability.
+
+LINK GENERATION INSTRUCTION:
+For every selection, construct an absolute URL by combining the Destination URL base, the specific ASIN Code, and formatting the tracking string with "?tag=" using the Affiliate ID.

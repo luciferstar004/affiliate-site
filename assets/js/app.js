@@ -2,7 +2,7 @@
       EDIT THIS SECTION FIRST
       Change the text, categories, products, prices, and links below.
       The page updates itself from these arrays, so you do not need to copy
-      product-card HTML every time you add a product.
+      product-card HTML every time you add a product. 
     */
 const affiliateTag = "YOUR-TAG";
 
@@ -109,7 +109,7 @@ const affiliateTag = "YOUR-TAG";
     }
 
     function renderSiteShell() {
-      document.title = `${site.brandName}${site.brandAccent} - Amazon Finds`;
+        document.title = `${site.brandName}${site.brandAccent} - Amazon Finds`;
       document.getElementById("siteLogo").innerHTML = `${escapeHtml(site.brandName)}<span>${escapeHtml(site.brandAccent)}</span>`;
       document.getElementById("heroBadge").textContent = site.hero.badge;
       document.getElementById("heroTitle").innerHTML = site.hero.titleHtml;

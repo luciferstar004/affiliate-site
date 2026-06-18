@@ -1,0 +1,42 @@
+name: Weekly Autonomous Site Maintenance
+
+on:
+  schedule:
+    # This runs the agent system automatically every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # This enables a manual "Run Workflow" button inside your GitHub dashboard
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository Code
+      uses: actions/checkout@v4
+
+    - name: Set up Python Environment
+      uses: actions/setup-python@v5
+      with:
+        python-python: '3.11'
+        cache: 'pip'
+
+    - name: Install System Requirements
+      run: |
+        python -m pip install --upgrade pip
+        # We don't need external heavy packages because our orchestration uses built-in urllib!
+
+    - name: Run Autonomous Multi-Agent Pipeline
+      env:
+        # Securely maps your private cloud key into the GitHub runner container environment
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      run: |
+        python engine/orchestrator.py
+
+    - name: Commit and Push Autonomously Generated Content
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action [Agent Fleet]"
+        git add .
+        # Only commits changes if the agents actually found and built new things
+        git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-Build: Agents updated trending products and compiled landing pages [2026]" && git push)

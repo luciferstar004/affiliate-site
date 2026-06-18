@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <title>{{META_TITLE}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,700;1,300&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+    <nav>
+        <a href="index.html" class="nav-logo" id="siteLogo">Curated<span>Picks</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="affiliate-disclosure.html">Disclosure</a></li>
+        </ul>
+    </nav>
+
+    <main style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
+        <article class="money-page">
+            <header class="article-header" style="text-align: center; margin-bottom: 40px;">
+                <h1 style="font-family: 'Fraunces', serif; font-size: 2.5rem; margin-bottom: 10px;">{{H1_TITLE}}</h1>
+                <p style="color: #666; font-style: italic;">Verified Options | Last Updated: June 2026</p>
+            </header>
+
+            <section class="intro" style="font-size: 1.1rem; margin-bottom: 30px;">
+                {{INTRO_TEXT}}
+            </section>
+
+            {{TOP_PICK_BOX}}
+
+            <section class="comparison-matrix" style="margin: 40px 0;">
+                <h2 style="font-family: 'Fraunces', serif;">Quick Comparison Table</h2>
+                <div style="overflow-x: auto;">
+                    {{COMPARISON_TABLE}}
+                </div>
+            </section>
+
+            <section class="product-reviews">
+                <h2 style="font-family: 'Fraunces', serif;">In-Depth Reviews</h2>
+                {{PRODUCT_REVIEWS}}
+            </section>
+
+            <section class="buying-guide" style="background: #f9f9f9; padding: 30px; border-radius: 8px; margin: 40px 0;">
+                <h2 style="font-family: 'Fraunces', serif;">Buying Guide: What to Look For</h2>
+                {{BUYING_GUIDE}}
+            </section>
+
+            <section class="faq-section" style="margin-top: 40px;">
+                <h2 style="font-family: 'Fraunces', serif;">Frequently Asked Questions</h2>
+                {{FAQ_SECTION}}
+            </section>
+        </article>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 20px; color: #777; font-size: 0.9rem; border-top: 1px solid #eee;">
+        <p>© 2026 Curated Picks. Affiliate Disclaimer: As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.</p>
+    </footer>
+
+    <script src="assets/js/app.js" defer></script>
+    {{FAQ_SCHEMA}}
+</body>
+</html>

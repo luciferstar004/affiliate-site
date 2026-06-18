@@ -1,0 +1,80 @@
+**Task File Data Configuration**
+
+**Article Title:** Best Mechanical Keyboards Under 5000: Top 3 Options for Gamers and Typists
+
+**Introduction:**
+Are you in the market for a high-quality mechanical keyboard that won't break the bank? Look no further. In this article, we'll review the top 3 highly-rated mechanical keyboards under 5000, based on current market trends and customer reviews. Whether you're a gamer, typist, or simply looking for a reliable keyboard, we've got you covered.
+
+**Comparison Table:**
+
+| Keyboard | Price | Rating | Switch Type | Switch Lifespan | Actuation Force | Actuation Distance | Polling Rate |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Logitech G512 | 3499 | 4.5/5 | Romer-G | 70 million | 45g | 3mm | 1000Hz |
+| HyperX Alloy Elite RGB | 3999 | 4.5/5 | Kailh Silver Speed | 80 million | 50g | 1.2mm | 1000Hz |
+| Corsair K95 RGB Platinum | 4499 | 4.6/5 | Cherry MX Brown | 50 million | 55g | 2mm | 1000Hz |
+
+**Product Reviews:**
+
+1. **Logitech G512 Mechanical Gaming Keyboard**
+	* Price: 3499
+	* Rating: 4.5/5
+	* Key Features: Romer-G switches, customizable lighting, built-in wrist rest, USB passthrough, media controls
+	* Pros: Durable construction, customizable lighting, comfortable wrist rest, good tactile feedback
+	* Cons: No wireless connectivity, some users find the Romer-G switches too loud
+2. **HyperX Alloy Elite RGB Mechanical Gaming Keyboard**
+	* Price: 3999
+	* Rating: 4.5/5
+	* Key Features: Kailh Silver Speed switches, customizable RGB lighting, built-in wrist rest, media controls, USB passthrough
+	* Pros: Fast and responsive switches, customizable lighting, comfortable wrist rest, durable construction
+	* Cons: No wireless connectivity, some users find the Kailh switches too sensitive
+3. **Corsair K95 RGB Platinum Mechanical Gaming Keyboard**
+	* Price: 4499
+	* Rating: 4.6/5
+	* Key Features: Cherry MX Brown switches, customizable RGB lighting, built-in wrist rest, media controls, USB passthrough, 18 macro keys
+	* Pros: High-quality Cherry MX switches, customizable lighting, comfortable wrist rest, durable construction, macro keys
+	* Cons: No wireless connectivity, some users find the keyboard too large
+
+**Pros and Cons:**
+
+* **Logitech G512:** Pros - durable construction, customizable lighting, comfortable wrist rest; Cons - no wireless connectivity, Romer-G switches can be loud
+* **HyperX Alloy Elite RGB:** Pros - fast and responsive switches, customizable lighting, comfortable wrist rest; Cons - no wireless connectivity, Kailh switches can be too sensitive
+* **Corsair K95 RGB Platinum:** Pros - high-quality Cherry MX switches, customizable lighting, comfortable wrist rest, macro keys; Cons - no wireless connectivity, keyboard can be too large
+
+**Buying Guide:**
+When choosing a mechanical keyboard, consider the following factors:
+
+* Switch type: Romer-G, Kailh, or Cherry MX?
+* Customizable lighting: Do you want RGB or single-color lighting?
+* Wrist rest: Do you prefer a built-in or detachable wrist rest?
+* Media controls: Do you need dedicated media controls?
+* Budget: How much are you willing to spend?
+
+**FAQ:**
+
+1. What is the best switch type for gaming?
+Answer: Cherry MX switches are considered the gold standard for gaming, but Romer-G and Kailh switches are also popular options.
+2. Do I need customizable lighting?
+Answer: Customizable lighting can enhance your gaming experience, but it's not essential for typing or general use.
+3. What is the difference between a built-in and detachable wrist rest?
+Answer: A built-in wrist rest provides added comfort and support, while a detachable wrist rest offers flexibility and customization.
+
+**Final Verdict:**
+Based on our review, the top 3 highly-rated mechanical keyboards under 5000 are:
+
+1. **Corsair K95 RGB Platinum Mechanical Gaming Keyboard** (Best Overall)
+2. **HyperX Alloy Elite RGB Mechanical Gaming Keyboard** (Best Value)
+3. **Logitech G512 Mechanical Gaming Keyboard** (Best Budget)
+
+**SEO Report:**
+
+* **Meta Description:** Discover the top 3 highly-rated mechanical keyboards under 5000, featuring customizable lighting, comfortable wrist rests, and high-quality switches.
+* **Target Keywords:** mechanical keyboards, gaming keyboards, keyboard reviews, best keyboards under 5000
+* **Internal Link Suggestions:**
+	+ Best Gaming Keyboards Under 2000
+	+ Top 5 Mechanical Keyboards for Typing
+	+ How to Choose the Right Switch Type for Your Keyboard
+* **Schema Markup:** Use schema markup to highlight the product reviews, ratings, and prices.
+* **FAQs:**
+	1. What is the best mechanical keyboard for gaming?
+	2. How do I choose the right switch type for my keyboard?
+	3. What is the difference between a mechanical and membrane keyboard?
