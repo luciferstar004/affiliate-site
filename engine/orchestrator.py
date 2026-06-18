@@ -12,7 +12,6 @@ def save_file(filepath, content):
         f.write(content)
 
 def call_ai_agent(persona_rules, task_input, api_key):
-    """Executes a live network call mapping a specific agent persona to a workspace task."""
     payload = {
         "model": "llama-3.3-70b-versatile",
         "messages": [
@@ -39,8 +38,27 @@ def call_ai_agent(persona_rules, task_input, api_key):
         result = json.loads(response.read().decode("utf-8"))
         return result["choices"][0]["message"]["content"].strip()
 
-def run_autonomous_pipeline(keyword_topic):
-    print(f"🤖 Activating Autonomous Agent Pipeline for: {keyword_topic}")
+def run_autonomous_pipeline():
+    queue_path = "data/keywords.txt"
+    history_path = "data/processed-keywords.txt"
+    
+    # 1. Validate the text queue exists and has lines
+    if not os.path.exists(queue_path) or os.stat(queue_path).st_size == 0:
+        print("📭 Automation Halt: Your data/keywords.txt queue is completely empty!")
+        return
+
+    with open(queue_path, 'r', encoding='utf-8') as f:
+        all_lines = [line.strip() for line in f.readlines() if line.strip()]
+
+    if not all_lines:
+        print("📭 Automation Halt: No valid topics found in data/keywords.txt.")
+        return
+
+    # Grab the top item on the conveyor belt
+    keyword_topic = all_lines[0]
+    remaining_topics = all_lines[1:]
+
+    print(f"🤖 Conveyor Belt Active! Target Keyword for this cycle: '{keyword_topic}'")
     
     api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
@@ -48,34 +66,38 @@ def run_autonomous_pipeline(keyword_topic):
         return
 
     # --- PHASE 1: RESEARCH AGENT ---
-    print("🔍 Step 1: Deploying Research Agent to find trending product specs...")
+    print("🔍 Step 1: Deploying Research Agent...")
     research_persona = load_file("agents/research-agent.md")
     research_query = f"Find top 3 highly-rated trending products for target keyword group: '{keyword_topic}'. Provide structural technical specifications, current pricing markers, and key performance parameters."
-    
     raw_research_data = call_ai_agent(research_persona, research_query, api_key)
-    print("✅ Research Agent has compiled the data packet.")
 
     # --- PHASE 2: CONTENT & SEO AGENT ---
-    print("✍️ Step 2: Deploying Content/SEO Agent to build task parameters...")
+    print("✍️ Step 2: Deploying Content/SEO Agent...")
     content_persona = load_file("agents/content-agent.md")
     seo_persona = load_file("agents/seo-agent.md")
     combined_persona = f"{content_persona}\n\nSEO Strategy Rules:\n{seo_persona}"
-    
     task_file_content = call_ai_agent(combined_persona, f"Transform this raw product research into a complete, clean task file data configuration:\n\n{raw_research_data}", api_key)
     
-    # Save the agent's work directly into your tasks folder automatically
     task_filename = f"{keyword_topic.lower().replace(' ', '-')}.txt"
     save_file(f"agents/tasks/{task_filename}", task_file_content)
-    print(f"✅ Content Agent successfully wrote new task instructions to: agents/tasks/{task_filename}")
 
     # --- PHASE 3: TRIGGER FACTORY BUILDER ---
-    print("🏭 Step 3: Triggering production compiler to generate live landing page...")
+    print("🏭 Step 3: Compiling production landing page...")
     import generator
     output_html = f"best-{keyword_topic.lower().replace(' ', '-')}.html"
     generator.run_factory(task_filename, output_html)
     
-    print(f"🚀 PIPELINE COMPLETE: Your site has successfully updated with an autonomous build: ./{output_html}")
+    # --- PHASE 4: QUEUE ROTATION & ROTATE SAVE ---
+    print("♻️ Step 4: Advancing conveyor belt queue setup...")
+    # Overwrite the keyword file with the remaining items
+    updated_queue_content = "\n".join(remaining_topics) + ("\n" if remaining_topics else "")
+    save_file(queue_path, updated_queue_content)
+    
+    # Append the completed item to a historical log file
+    with open(history_path, "a", encoding="utf-8") as hist:
+        hist.write(f"{keyword_topic}\n")
+        
+    print(f"🚀 PIPELINE COMPLETE: Successfully launched ./{output_html}")
 
 if __name__ == "__main__":
-    # Test running the entire agent loop for a new niche product topic category
-    run_autonomous_pipeline("mechanical keyboards under 5000")
+    run_autonomous_pipeline()
